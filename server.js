@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, "public")));
 require("dotenv").config();
 const server = http.createServer(app);
 const io = socketio(server);
-const PORT = process.env.DB_HOST || 5000;
+const PORT = process.env.PORT || 5000;
 
 const users = [];
 
